@@ -5,8 +5,8 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "parcel src/index.html src/workexperiencelist.html src/registeraccount.html",
+    "build": "parcel build src/index.html src/workexperiencelist.html src/registeraccount.html"
   },
   "keywords": [],
   "author": "",

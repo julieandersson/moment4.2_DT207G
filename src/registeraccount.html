@@ -8,19 +8,29 @@
 </head>
 <body>
     <main>
-        <h1>Skapa konto</h1>
-  <form id="register-form">
-    <label for="username">Användarnamn:</label>
-    <input type="text" id="username" required>
-    
-    <label for="password">Lösenord:</label>
-    <input type="password" id="password" required>
-    
-    <button type="submit">Registrera</button>
-  </form>
+        <h1>Skapa ett konto</h1>
+        
+        <!-- Formulär för att skapa ett konto -->
+        <form id="register-form">
+            <label for="username">Användarnamn:</label>
+            <input type="text" id="username" required>
+            
+            <label for="password">Lösenord:</label>
+            <input type="password" id="password" required>
+            
+            <button type="submit">Registrera</button>
+        </form>
 
-  <p>Har du redan ett konto? <a href="index.html">Logga in här</a></p>
+        <!-- Laddningsindikator, visas när kontot skapas -->
+        <div id="create-account-loading" style="display: none;">
+            <p>Skapar konto...</p>
+        </div>
 
+        <!-- Felmeddelande, visas om något går fel -->
+        <div id="createAccountErrorMessage" style="display: none; color: red;"></div>
+        
+        <!-- Länk till inloggningssidan -->
+        <p>Har du redan ett konto? <a href="index.html">Logga in här</a></p>
     </main>
 
     <script src="js/registeraccount.js"></script>
