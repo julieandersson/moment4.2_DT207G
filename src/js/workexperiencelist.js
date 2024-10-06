@@ -74,9 +74,19 @@ if (!authToken) {
       if (data.length > 0) {
         workExperienceListElement.innerHTML = ""; // Rensar listan om det finns tidigare innehåll
         data.forEach((experience) => {
-          // Skapa ett nytt list-item för varje arbetserfarenhet
+          // Formatera datum
+          const startDate = new Date(experience.startdate).toLocaleDateString();
+          const endDate = new Date(experience.enddate).toLocaleDateString();
+          
+          // Nytt list-item för varje arbetserfarenhet
           const listItem = document.createElement("li");
-          listItem.textContent = `${experience.jobtitle} på ${experience.companyname} (${experience.startdate} - ${experience.enddate})`;
+          listItem.innerHTML = `
+            <strong>Jobbtitel:</strong> ${experience.jobtitle} <br>
+            <strong>Företagsnamn:</strong> ${experience.companyname} <br>
+            <strong>Plats:</strong> ${experience.location} <br>
+            <strong>Perioden:</strong> ${startDate} - ${endDate} <br>
+            <strong>Beskrivning:</strong> ${experience.description}
+          `;
           workExperienceListElement.appendChild(listItem); // Lägg till arbetserfarenheten i listan
         });
       } else {
