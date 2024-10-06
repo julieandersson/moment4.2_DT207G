@@ -1,0 +1,47 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling för body och main */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ddeeff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    flex: 1;
+}
+
+/* Styling för footer */
+footer {
+    background-color: #5b9bd5;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    height: 90px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+
+}
+
+footer p {
+    margin: 17px;
+    font-size: 1em;
+    line-height: 1.6;
+
+}
