@@ -20,7 +20,7 @@ main {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 800px;
-    width: 100%;
+    width: 80%;
     margin: 20px auto;
     text-align: center;
     flex: 1;
@@ -181,3 +181,99 @@ button#logout-button {
 button#logout-button:hover {
     background-color: #e04848;
 }
+
+/* MEDIA QUERIES */
+
+/* TABLET */
+@media (max-width: 900px) and (min-width: 600px) {
+
+    main {
+        padding: 50px;
+        max-width: 95%;
+        margin: 20px auto;
+    }
+
+    form {
+        padding: 25px;
+        max-width: 70%;
+    }
+  
+    h1 {
+        font-size: 22px;
+    }
+  
+    form input {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    form button {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 12px 0;
+        width: 100%;
+    }
+
+    /* Lista för arbetserfarenheter */
+    ul#workexperience-list li {
+        padding: 12px;
+    }
+  
+    button#logout-button {
+        padding: 10px;
+        font-size: 15px;
+    }
+  }
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    main {
+        padding: 20px;
+        width: 80%;
+    }
+  
+    form {
+        margin-top: 30px;
+        padding: 40px;
+        max-width: 70%;
+    }
+
+    h1 {
+        margin-top: 50px;
+        font-size: 20px;
+    }
+  
+
+    form input {
+        padding: 8px;
+        margin-bottom: 15px;
+    }
+  
+    form button {
+        padding: 10px;
+        font-size: 14px;
+    }
+  
+    /* Footer */
+    footer {
+        padding: 5px 0;
+        font-size: 12px;
+    }
+  
+    /* Lista för arbetserfarenheter */
+    ul#workexperience-list li {
+        padding: 10px;
+    }
+
+    button#logout-button {
+        padding: 8px;
+        font-size: 14px;
+    }
+  }
+  
