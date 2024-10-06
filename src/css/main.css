@@ -26,6 +26,99 @@ main {
     flex: 1;
 }
 
+/* Styling för rubrik */
+
+h1 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Styling för formulär på logga in samt registrera-sidan */
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f9fbfd;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Etiketter */
+form label {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Input-fält */
+form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #5b9bd5;
+    outline: none;
+}
+
+/* Logga in och Registrera-knappen */
+form button {
+    background-color: #5b9bd5;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #497aad;
+}
+
+/* Laddningsindikator */
+#loading-indicator, #create-account-loading {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666666;
+}
+
+/* Felmeddelande */
+#loginErrorMessage, #createAccountErrorMessage {
+    margin-top: 15px;
+    font-size: 14px;
+    color: red;
+}
+
+/* Länk till inloggningssidan eller registreringssidan */
+p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+p a {
+    color: #5b9bd5;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+
 /* Styling för footer */
 footer {
     background-color: #5b9bd5;
