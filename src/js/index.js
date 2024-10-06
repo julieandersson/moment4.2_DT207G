@@ -61,7 +61,7 @@ loginFormElement.addEventListener("submit", async (event) => {
     } else {
       const responseData = await apiResponse.json();
       // Visa felmeddelande om inloggningen misslyckades
-      loginErrorMessage.textContent = `Fel: ${responseData.error}`;
+      loginErrorMessage.textContent = `${responseData.error}`;
       loginErrorMessage.style.display = "block";
     }
   } catch (error) {

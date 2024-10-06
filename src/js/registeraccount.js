@@ -57,7 +57,7 @@ createAccountFormElement.addEventListener("submit", async (event) => {
       window.location.href = "index.html";
     } else {
       // Visa felmeddelande om registreringen misslyckades
-      createAccountErrorMessage.textContent = `Fel: ${responseData.error}`;
+      createAccountErrorMessage.textContent = `${responseData.error}`;
       createAccountErrorMessage.style.display = "block";
     }
   } catch (error) {

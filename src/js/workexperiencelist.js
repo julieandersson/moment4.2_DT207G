@@ -6,6 +6,8 @@
 const workExperienceListElement = document.getElementById("workexperience-list");
 // Hämtar laddningsmeddelandet som visas medan data hämtas
 const loadingMessage = document.getElementById("loading-message");
+// Hämtar logga ut-knappen
+const logoutButton = document.getElementById("logout-button");
 
 // Funktion för att hämta JWT-token från localStorage
 function getAuthToken() {
@@ -21,6 +23,22 @@ function showLoading() {
 function hideLoading() {
   loadingMessage.style.display = "none"; 
 }
+
+// Funktion för att logga ut användaren
+function logoutUser() {
+    const confirmLogout = confirm("Är du säker att du vill logga ut?");
+    if (confirmLogout) {
+      // Rensa authToken från localStorage
+      localStorage.removeItem("authToken");
+      localStorage.removeItem("loggedInUser");
+  
+      // Skicka användaren tillbaka till inloggningssidan
+      window.location.href = "index.html";
+    }
+  }
+  
+// Lägg till händelsehanterare för "Logga ut"-knappen
+logoutButton.addEventListener("click", logoutUser);
 
 // Kontrollera om användaren är inloggad genom att kolla om JWT-token finns
 const authToken = getAuthToken();
